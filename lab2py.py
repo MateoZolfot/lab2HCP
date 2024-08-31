@@ -13,7 +13,7 @@ def multiply_matrices(a, b):
                 result[i][j] += a[i][k] * b[k][j]
     return result
 
-n = 1000  # Por ejemplo, n = 1000
+n = 1000
 
 # Medir el tiempo para generar una matriz
 start_time = time.time()
@@ -22,7 +22,7 @@ generation_time = time.time() - start_time
 print(f"Time to generate a matrix: {generation_time:.6f} seconds")
 
 # Medir el tiempo para la multiplicación de matrices
-b = generate_matrix(n)  # Generar la segunda matriz
+b = generate_matrix(n) 
 start_time = time.time()
 result = multiply_matrices(a, b)
 multiplication_time = time.time() - start_time
