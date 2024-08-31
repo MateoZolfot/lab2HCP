@@ -66,11 +66,6 @@ int main() {
     double multiplication_time = (double)(end_time - start_time) / CLOCKS_PER_SEC;
     printf("Time to do the product: %f seconds\n", multiplication_time);
 
-    // Imprimir las matrices generadas y el resultado (opcional)
-    // print_matrix(A, n);
-    // print_matrix(B, n);
-    // print_matrix(C, n);
-
     // Liberar memoria
     for (int i = 0; i < n; i++) {
         free(A[i]);
